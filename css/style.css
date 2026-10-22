@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5f8;
+    color: #392d38;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    color: #a70061;
+    margin-top: 60px;
+    font-size: 36px;
+}
+
+h2 {
+    color: #6e5262;
+}
+
+p {
+    font-size: 18px;
+}
+
+nav {
+    background-color: #ffc0cb;
+    padding: 22px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+nav a {
+    color: #392d38;
+    text-decoration: none;
+    background-color: white;
+    padding: 12px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #a70061;
+    color: white;
+}
+
+button {
+    background-color: #e58090;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    margin: 8px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a70061;
+}
+
+input {
+    padding: 13px;
+    border: 1px solid #ffc0cb;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 8px;
+}
+
+#box, #mouseBox {
+    background-color: lightblue;
+    padding: 40px;
+    margin: 30px auto;
+    width: 300px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+ul {
+    list-style-position: inside;
+    padding: 0;
+}
+
+li {
+    background-color: white;
+    padding: 12px;
+    margin: 10px auto;
+    max-width: 450px;
+    border-radius: 10px;
+}
+
+span {
+    cursor: pointer;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin: 40px auto;
+    max-width: 1100px;
+}
+
+.todo-left, .todo-right {
+    width: 45%;
+    text-align: left;
+}
+
+.todo-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.todo-form label {
+    display: block;
+    margin: 15px 0 5px;
+}
+
+.todo-form input,
+.todo-form textarea {
+    width: 100%;
+    margin: 0;
+    border: 1px solid #ddd;
+}
+
+.todo-form textarea {
+    height: 150px;
+    padding: 12px;
+    border-radius: 10px;
+    font-family: Arial;
+}
+
+.todo-form button {
+    margin: 20px 0 0;
+}
+
+.todo-left ul {
+    padding: 0;
+}
+
+.todo-left li {
+    list-style: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px 0;
+    max-width: none;
+}
+
+.todo-left h3 {
+    margin: 0;
+}
+
+.todo-left p {
+    font-size: 15px;
+}
+
+@media (max-width: 700px) {
+    .todo-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .todo-left, .todo-right {
+        width: 100%;
+    }
+}
